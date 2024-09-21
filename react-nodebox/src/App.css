@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  max-width: 80%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  border-radius: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.page-link {
+  color: #0d7bff;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active-page {
+  background-color: lightblue;
+  color: #fff;
+}

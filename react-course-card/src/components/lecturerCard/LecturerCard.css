@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+.lec-card {
+  margin: 3rem 1rem;
+  width: 40rem;
+  height: auto;
+  line-height: 1.5;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.lec-card-top {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  background-color: indianred;
+  color: white;
+}
+
+.lec-card-top-photo {
+  margin: 0 3rem;
+}
+
+.lec-card-top-icon {
+  font-size: 8rem;
+  margin: 2rem auto;
+}
+
+.lec-card-top-content-name {
+  font-size: 2.5rem;
+}
+
+.lec-card-medium {
+  padding: 2rem;
+}
+
+.lec-card-footer {
+  background-color: darkslategray;
+  color: white;
+  padding: 2rem;
+}

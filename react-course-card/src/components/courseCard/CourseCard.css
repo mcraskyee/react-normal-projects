@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+.card {
+  margin: 3rem 1rem;
+  width: 40rem;
+  height: 33rem;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+/* card-top */
+.card-top {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  height: 10rem;
+  color: #fff;
+}
+
+.card-top::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 12rem solid transparent;
+  border-bottom: 4rem solid;
+}
+
+.card-top-icon {
+  display: inline-block;
+  font-size: 8rem;
+  margin: 1rem auto;
+}
+
+.card-top-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  margin: 1rem;
+}
+
+.card-top-content-online {
+  font-size: 1rem;
+  background-color: green;
+  padding: 0.5rem;
+}
+
+.card-top-content-applies {
+  font-size: 0.8rem;
+  color: #000;
+  z-index: 100;
+}
+
+/* card-main */
+.card-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: antiquewhite;
+  height: 12rem;
+  padding: 1rem;
+}
+
+.card-main-button {
+  display: inline-block;
+  height: 2rem;
+  background-color: #fff;
+  font-size: large;
+}
+
+.card-main-button:hover {
+  background-color: rgb(13, 67, 76);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.card-main-bottom-context {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.card-main-bottom-context-language {
+  padding-right: 1rem;
+  border-right: 1px solid #000;
+}
+
+.card-main-bottom-context-time {
+  margin-left: 1rem;
+}
+
+/* card-footer */
+.card-footer {
+  padding: 0.6rem;
+}
+
+.card-footer-difficulty {
+  margin: 0.6rem auto 0.6rem 0.6rem;
+  color: #fff;
+  font-size: larger;
+}
+
+/* card-comment */
+.card-comment-visible {
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  width: 100%;
+  height: 10rem;
+  padding: 1rem;
+}
+
+.card-comment-content {
+  display: inline-block;
+  width: 100%;
+  resize: none;
+  height: 3rem;
+  margin-bottom: 0.6rem;
+}
+
+.card-comment-submit {
+  display: inline-block;
+  width: 100%;
+  height: 2rem;
+  background-color: #fff;
+  font-size: large;
+  cursor: pointer;
+}
