@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.App {
+.course-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
