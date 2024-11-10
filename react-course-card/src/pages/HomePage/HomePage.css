@@ -1,5 +1,6 @@
 .homepage {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 10%;
@@ -7,4 +8,25 @@
 
 .homepage h1 {
   font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login input {
+  width: 30rem;
+  height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.login button {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 50px;
+  cursor: pointer;
 }
