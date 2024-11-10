@@ -1,10 +1,11 @@
-.homepage {
+.profile-page {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 10%;
 }
 
-.homepage h1 {
+.profile-page h1 {
   font-size: 5rem;
 }
