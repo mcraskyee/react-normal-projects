@@ -10,6 +10,7 @@ export default function HomePage() {
       {isLoggedIn ? (
         <div className="login">
           <p>You are logged in.</p>
+          <p>Please see your enrolled courses in Profile page.</p>
           <button onClick={logout}>Log Out</button>
         </div>
       ) : (

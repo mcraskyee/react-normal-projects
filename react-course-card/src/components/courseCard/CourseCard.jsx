@@ -6,21 +6,28 @@ const CourseCard = (props) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [review, setReview] = useState("");
   const [isReviewed, setIsReviewed] = useState(false);
-  const [enrollCount, setEnrollCount] = useState(0);
+  const [isEnrolled, setIsEnrolled] = useState(false);
 
-  //从父亲级传过来的加props
-  const isCompletedBtnText =
-    props.isCompleted === true ? "Revisit Course!" : "Start Now!";
-  //在组件内部定义的state不加props
   const isReviewedBtnText =
     isReviewed === true ? "Review Is Submitted" : "Submit Review";
+  const isEnrolledBtnText =
+    isEnrolled === true ? "Enrolled Successfully" : "Enroll";
 
   const handleChangeVisible = () => {
     setIsVisible(!isVisible);
     setIsSubmitted(false);
   };
 
-  const handleSubmit = () => {
+  const handleIsEnrolled = () => {
+    setIsEnrolled(!isEnrolled);
+    alert(
+      !isEnrolled
+        ? `Course ${props.title} is Enrolled. Please check Profile page.`
+        : `Enrollment of ${props.title} is cancelled.`
+    );
+  };
+
+  const handleReviewSubmit = () => {
     if (review.trim() === "") {
       alert("Please add your review.");
       return;
@@ -29,14 +36,6 @@ const CourseCard = (props) => {
     setIsSubmitted(true);
     setIsReviewed(true);
     setReview("");
-  };
-
-  const handleReviewChange = (event) => {
-    setReview(event.target.value);
-  };
-
-  const handleEnrollCount = () => {
-    setEnrollCount(enrollCount + 1);
   };
 
   const changeFooterColor = () => {
@@ -58,13 +57,15 @@ const CourseCard = (props) => {
         </span>
         <div className="card-top-content">
           <h5 className="card-top-content-online">ONLINE</h5>
-          <h6 className="card-top-content-applies">{`${enrollCount} Enrolled`}</h6>
+          <h6 className="card-top-content-applies">
+            {isEnrolled ? "Enrolled" : "Not Enrolled"}
+          </h6>
         </div>
       </div>
       <div className="card-main">
         <h2 className="card-main-title">{props.title}</h2>
-        <button className="card-main-button" onClick={handleEnrollCount}>
-          {isCompletedBtnText}
+        <button className="card-main-button" onClick={handleIsEnrolled}>
+          {isEnrolledBtnText}
         </button>
         <button className="card-main-button" onClick={handleChangeVisible}>
           Write Review
@@ -89,11 +90,13 @@ const CourseCard = (props) => {
             className="card-comment-content"
             placeholder="No more than 100 words"
             value={review}
-            onChange={handleReviewChange}
+            onChange={(event) => {
+              setReview(event.target.value);
+            }}
           ></textarea>
           <button
             className="card-comment-submit"
-            onClick={handleSubmit}
+            onClick={handleReviewSubmit}
             // 绑定多个用or连接
             disabled={isSubmitted || isReviewed}
           >
