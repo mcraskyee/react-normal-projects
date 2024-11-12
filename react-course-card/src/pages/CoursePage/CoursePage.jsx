@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./CoursePage.css";
 import axios from "axios";
 import coursesData from "../../Data/coursesData";
-import CourseCard from "../../components/CourseCard/CourseCard";
-import LecturerCard from "../../components/LecturerCard/LecturerCard";
+import CourseCard from "../../components/courseCard/CourseCard";
+import LecturerCard from "../../components/lecturerCard/LecturerCard";
 
 export default function CoursePage() {
   const [courses, setCourses] = useState(coursesData);

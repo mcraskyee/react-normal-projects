@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleEnrollment } from "../../store/courseSlice";
 import "./CourseCard.css";
 
 const CourseCard = (props) => {
@@ -6,12 +8,14 @@ const CourseCard = (props) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [review, setReview] = useState("");
   const [isReviewed, setIsReviewed] = useState(false);
-  const [isEnrolled, setIsEnrolled] = useState(false);
 
-  const isReviewedBtnText =
-    isReviewed === true ? "Review Is Submitted" : "Submit Review";
-  const isEnrolledBtnText =
-    isEnrolled === true ? "Enrolled Successfully" : "Enroll";
+  const isEnrolled = useSelector((state) => state.course.isEnrolled);
+  const dispatch = useDispatch();
+
+  const isReviewedBtnText = isReviewed
+    ? "Review Is Submitted"
+    : "Submit Review";
+  const isEnrolledBtnText = isEnrolled ? "Enrolled Successfully" : "Enroll";
 
   const handleChangeVisible = () => {
     setIsVisible(!isVisible);
@@ -19,7 +23,7 @@ const CourseCard = (props) => {
   };
 
   const handleIsEnrolled = () => {
-    setIsEnrolled(!isEnrolled);
+    dispatch(toggleEnrollment());
     alert(
       !isEnrolled
         ? `Course ${props.title} is Enrolled. Please check Profile page.`
