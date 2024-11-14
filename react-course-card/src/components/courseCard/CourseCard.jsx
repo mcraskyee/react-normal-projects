@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleEnrollment } from "../../store/courseSlice";
+import { toggleEnrollment } from "../../store/courseEnroll";
 import "./CourseCard.css";
 
 const CourseCard = (props) => {

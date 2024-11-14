@@ -4,7 +4,7 @@ const initialState = {
   isEnrolled: false,
 };
 
-const courseSlice = createSlice({
+const courseEnroll = createSlice({
   name: "course",
   initialState,
   reducers: {
@@ -17,5 +17,5 @@ const courseSlice = createSlice({
   },
 });
 
-export const { toggleEnrollment, setEnrollment } = courseSlice.actions;
-export default courseSlice.reducer;
+export const { toggleEnrollment, setEnrollment } = courseEnroll.actions;
+export default courseEnroll.reducer;
