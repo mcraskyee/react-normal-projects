@@ -1,21 +1,38 @@
+// store/courseEnroll.js
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  isEnrolled: false,
+  enrolledCourses: [],
+  courseReviews: {},
 };
 
 const courseEnroll = createSlice({
   name: "course",
   initialState,
   reducers: {
-    toggleEnrollment(state) {
-      state.isEnrolled = !state.isEnrolled;
+    toggleEnrollment(state, action) {
+      const course = action.payload;
+      const existingIndex = state.enrolledCourses.findIndex(
+        (c) => c.id === course.id
+      );
+
+      if (existingIndex === -1) {
+        state.enrolledCourses.push(course);
+      } else {
+        state.enrolledCourses.splice(existingIndex, 1);
+      }
     },
-    setEnrollment(state, action) {
-      state.isEnrolled = action.payload;
+    submitReview(state, action) {
+      const { courseId, reviewText } = action.payload;
+      state.courseReviews[courseId] = reviewText;
+    },
+    resetReview(state, action) {
+      const { courseId } = action.payload;
+      delete state.courseReviews[courseId];
     },
   },
 });
 
-export const { toggleEnrollment, setEnrollment } = courseEnroll.actions;
+export const { toggleEnrollment, submitReview, resetReview } =
+  courseEnroll.actions;
 export default courseEnroll.reducer;

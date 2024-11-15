@@ -1,33 +1,38 @@
+// components/courseCard/CourseCard.js
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleEnrollment } from "../../store/courseEnroll";
+import {
+  toggleEnrollment,
+  submitReview,
+  resetReview,
+} from "../../store/courseEnroll";
 import "./CourseCard.css";
 
-const CourseCard = (props) => {
-  const [isVisible, setIsVisible] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [review, setReview] = useState("");
-  const [isReviewed, setIsReviewed] = useState(false);
-
-  const isEnrolled = useSelector((state) => state.course.isEnrolled);
+const CourseCard = ({
+  id,
+  title,
+  difficulty,
+  price,
+  duration,
+  icon,
+  cardTopColor,
+}) => {
   const dispatch = useDispatch();
+  const enrolledCourses = useSelector((state) => state.course.enrolledCourses);
+  const courseReviews = useSelector((state) => state.course.courseReviews);
 
-  const isReviewedBtnText = isReviewed
-    ? "Review Is Submitted"
-    : "Submit Review";
-  const isEnrolledBtnText = isEnrolled ? "Enrolled Successfully" : "Enroll";
+  const isEnrolled = enrolledCourses.some((course) => course.id === id);
+  const reviewText = courseReviews[id] || "";
 
-  const handleChangeVisible = () => {
-    setIsVisible(!isVisible);
-    setIsSubmitted(false);
-  };
+  const [isVisible, setIsVisible] = useState(false);
+  const [review, setReview] = useState("");
 
   const handleIsEnrolled = () => {
-    dispatch(toggleEnrollment());
+    dispatch(toggleEnrollment({ id, title, price, duration, difficulty }));
     alert(
-      !isEnrolled
-        ? `Course ${props.title} is Enrolled. Please check Profile page.`
-        : `Enrollment of ${props.title} is cancelled.`
+      isEnrolled
+        ? `Enrollment of ${title} is cancelled.`
+        : `Course ${title} is Enrolled. Please check Profile page.`
     );
   };
 
@@ -36,29 +41,20 @@ const CourseCard = (props) => {
       alert("Please add your review.");
       return;
     }
-    alert(`Your review: "${review}" about ${props.title} is submitted.`);
-    setIsSubmitted(true);
-    setIsReviewed(true);
-    setReview("");
+    dispatch(submitReview({ courseId: id, reviewText: review }));
+    alert(`Your review: "${review}" about ${title} is submitted.`);
+    setIsVisible(false);
   };
 
-  const changeFooterColor = () => {
-    const difficulty = props.difficulty;
-    if (difficulty === "Elementary") {
-      return "hsl(0,100%,80%)";
-    } else if (difficulty === "Intermediate") {
-      return "hsl(0,50%,40%)";
-    } else {
-      return "hsl(0, 20%, 20%)";
-    }
+  const handleReviewReset = () => {
+    dispatch(resetReview({ courseId: id }));
+    setReview("");
   };
 
   return (
     <div className="card">
-      <div className="card-top" style={{ backgroundColor: props.cardTopColor }}>
-        <span className="card-top-icon material-symbols-outlined">
-          {props.icon}
-        </span>
+      <div className="card-top" style={{ backgroundColor: cardTopColor }}>
+        <span className="card-top-icon material-symbols-outlined">{icon}</span>
         <div className="card-top-content">
           <h5 className="card-top-content-online">ONLINE</h5>
           <h6 className="card-top-content-applies">
@@ -67,26 +63,26 @@ const CourseCard = (props) => {
         </div>
       </div>
       <div className="card-main">
-        <h2 className="card-main-title">{props.title}</h2>
+        <h2 className="card-main-title">{title}</h2>
         <button className="card-main-button" onClick={handleIsEnrolled}>
-          {isEnrolledBtnText}
+          {isEnrolled ? "Enrolled Successfully" : "Enroll"}
         </button>
-        <button className="card-main-button" onClick={handleChangeVisible}>
+        <button
+          className="card-main-button"
+          onClick={() => setIsVisible(!isVisible)}
+        >
           Write Review
         </button>
         <div className="card-main-bottom">
-          <h3 className="card-main-bottom-price">{`$${props.price}`}</h3>
+          <h3 className="card-main-bottom-price">{`$${price.toFixed(2)}`}</h3>
           <div className="card-main-bottom-context">
             <p className="card-main-bottom-context-language">EN</p>
-            <p className="card-main-bottom-context-time">{`${props.duration} Totally`}</p>
+            <p className="card-main-bottom-context-time">{`${duration} Totally`}</p>
           </div>
         </div>
       </div>
-      <div
-        className="card-footer"
-        style={{ backgroundColor: changeFooterColor() }}
-      >
-        <p className="card-footer-difficulty">{props.difficulty}</p>
+      <div className="card-footer">
+        <p className="card-footer-difficulty">{difficulty}</p>
       </div>
       {isVisible && (
         <div className="card-comment-visible">
@@ -94,18 +90,20 @@ const CourseCard = (props) => {
             className="card-comment-content"
             placeholder="No more than 100 words"
             value={review}
-            onChange={(event) => {
-              setReview(event.target.value);
-            }}
+            onChange={(event) => setReview(event.target.value)}
           ></textarea>
           <button
             className="card-comment-submit"
             onClick={handleReviewSubmit}
-            // 绑定多个用or连接
-            disabled={isSubmitted || isReviewed}
+            disabled={Boolean(reviewText)}
           >
-            {isReviewedBtnText}
+            {reviewText ? "Review Submitted" : "Submit Review"}
           </button>
+          {reviewText && (
+            <button className="card-comment-reset" onClick={handleReviewReset}>
+              Remove Review
+            </button>
+          )}
         </div>
       )}
     </div>
