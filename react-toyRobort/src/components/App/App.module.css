@@ -1,0 +1,16 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 800px;
+  height: 600px;
+  margin: 32px 0;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 36px;
+
+}

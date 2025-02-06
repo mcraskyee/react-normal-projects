@@ -1,0 +1,14 @@
+.container {
+  padding: 0 0 16px 0
+}
+
+.layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divide {
+  border-color: black;
+  border-width: 1px;
+}
