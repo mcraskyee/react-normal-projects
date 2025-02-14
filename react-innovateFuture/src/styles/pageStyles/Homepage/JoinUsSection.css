@@ -1,0 +1,52 @@
+@import url(../../root.css);
+
+.join {
+  margin: 0 var(--body-margin) var(--main-section-margin) var(--body-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--deep-blue);
+}
+
+.join-image {
+  width: 32.5rem;
+}
+
+.join-content-container {
+  width: 25rem;
+  text-align: right;
+}
+
+.join-title {
+  font: var(--h2-font);
+  margin-bottom: var(--h2-margin);
+}
+
+.join-text {
+  font: var(--p-font);
+  margin-bottom: var(--p-margin);
+}
+
+.join-button-group {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.join-button {
+  margin-left: var(--button-margin);
+  padding: var(--button-padding-y) var(--button-padding-x);
+  background-color: var(--deep-blue);
+  border-radius: var(--button-radius);
+  border: none;
+  color: #fff;
+}
+
+.join-button:nth-of-type(1) {
+  background-color: var(--primary-orange);
+}
+
+.join-button:hover {
+  background-color: var(--primary-blue);
+  cursor: pointer;
+}

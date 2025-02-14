@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --font: 'Roboto', sans-serif;
+  --font-size: 16px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* font */
+  --h1-font: 700 3.75rem var(--font);
+  --h2-font: 600 2.25rem var(--font);
+  --h3-font: 600 1.875rem var(--font);
+  --h4-font: 500 1.5rem var(--font);
+  --h5-font: 500 1.25rem var(--font);
+  --p-font: 400 var(--font-size) var(--font);
+
+  /* line-height */
+  --paragraph-line-height: 1.5rem;
+
+  /* margin and padding */
+  --body-margin: 7.5rem;
+  --main-section-margin: 5rem;
+  --sub-section-margin: 3rem;
+  --detail-section-margin: 2rem;
+  --h1-margin: 1.5rem;
+  --h2-margin: 1.25rem;
+  --h3-margin: 1rem;
+  --h4-margin: 0.75rem;
+  --h5-margin: 0.5rem;
+  --p-margin: 1rem;
+  --link-margin: 4rem;
+  --button-margin: 2rem;
+  --button-padding-y: 0.5rem;
+  --button-padding-x: 1rem;
+  --picture-margin: 2.5rem;
+  --card-margin: 1.25rem;
+  --card-padding: 1.5rem;
+
+  /* radius */
+  --button-radius: 0.25rem;
+  --card-radius: 1rem;
+
+  /* text-frame-size */
+  --text-frame-size: 55rem;
+
+  /* box-shadow */
+  --box-shadow: 0 15px 15px rgba(5, 34, 79, 0.1);
+  /* color */
+  --primary-blue: #046FFB;
+  --primary-orange: #F36D26;
+  --deep-blue: #05224F;
+  --light-blue: #E8EFFA;
+  --color-pink: #DDB3E3;
+  --light-gray: #F9F9F9;
+}

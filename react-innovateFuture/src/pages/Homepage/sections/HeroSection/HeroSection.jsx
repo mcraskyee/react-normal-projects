@@ -1,3 +1,5 @@
+import "../../../../styles/pageStyles/Homepage/HeroSection.css";
+
 const HeroSection = () => {
   return (
     <section className="hero">
@@ -10,7 +12,11 @@ const HeroSection = () => {
         <button className="hero-button">Start Your Tour</button>
       </div>
       <div className="hero-image-container">
-        <img src="" alt="hero" className="hero-image" />
+        <img
+          src="/homepagePhotos/rafiki.png"
+          alt="hero"
+          className="hero-image"
+        />
       </div>
     </section>
   );

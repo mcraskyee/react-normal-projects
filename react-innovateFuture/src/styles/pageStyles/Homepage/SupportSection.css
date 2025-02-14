@@ -1,0 +1,41 @@
+@import url(../../root.css);
+
+.support {
+  margin: 0 var(--body-margin) var(--main-section-margin) var(--body-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--deep-blue);
+}
+
+.support-image {
+  width: 32.5rem;
+}
+
+.support-content-container {
+  width: 25rem;
+  text-align: left;
+}
+
+.support-title {
+  font: var(--h2-font);
+  margin-bottom: var(--h2-margin);
+}
+
+.support-text {
+  font: var(--p-font);
+  margin-bottom: var(--p-margin);
+}
+
+.support-button {
+  padding: var(--button-padding-y) var(--button-padding-x);
+  background-color: var(--deep-blue);
+  border-radius: var(--button-radius);
+  border: none;
+  color: #fff;
+}
+
+.support-button:hover {
+  background-color: var(--primary-blue);
+  cursor: pointer;
+}

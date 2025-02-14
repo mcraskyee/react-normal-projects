@@ -1,8 +1,14 @@
+import "../../../../styles/pageStyles/Homepage/JoinUsSection.css";
+
 const JoinUsSection = () => {
   return (
     <section className="join">
       <div className="join-image-container">
-        <img src="" alt="join us" className="join-image" />
+        <img
+          src="/homepagePhotos/amico 2.png"
+          alt="join us"
+          className="join-image"
+        />
       </div>
       <div className="join-content-container">
         <h2 className="join-title">Join Us</h2>

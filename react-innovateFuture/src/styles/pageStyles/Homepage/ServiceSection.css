@@ -1,0 +1,97 @@
+@import url(../../root.css);
+
+.service {
+  margin-bottom: var(--main-section-margin);
+}
+
+.service-summary {
+  color: var(--deep-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-summary-title {
+  font: var(--h2-font);
+  margin-bottom: var(--h2-margin);
+}
+
+.service-summary-text {
+  font: var(--p-font);
+  margin-bottom: var(--p-margin);
+  width: var(--text-frame-size);
+}
+
+.service-contents {
+  margin-top: var(--detail-section-margin);
+}
+
+.service-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.service-image-wrapper:nth-of-type(1) {
+  position: relative;
+  z-index: 10;
+  margin-left: var(--body-margin);
+}
+
+.service-image-wrapper:nth-of-type(2) {
+  position: relative;
+  z-index: 10;
+  margin-right: var(--body-margin);
+}
+
+.service-image {
+  width: 45rem;
+  height: auto;
+}
+
+.service-description {
+  width: 25rem;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  overflow: visible;
+}
+
+.service-description::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 43.125rem;
+  height: 36.125rem;
+  transform: translate(-50%, -50%);
+  z-index: -100;
+  background-color: var(--color-pink);
+}
+
+.service-description:nth-of-type(1) {
+  text-align: left;
+  margin-left: var(--body-margin);
+  margin-right: var(--picture-margin);
+  color: #fff;
+}
+
+.service-description:nth-of-type(1)::before {
+  background-color: var(--primary-blue);
+}
+
+.service-description:nth-of-type(2) {
+  text-align: right;
+  margin-right: var(--body-margin);
+  margin-left: var(--picture-margin);
+}
+
+.service-title {
+  font: var(--h4-font);
+  margin: var(--h4-margin) 0 var(--h4-margin) 0;
+}

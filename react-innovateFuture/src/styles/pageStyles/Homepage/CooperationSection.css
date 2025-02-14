@@ -1,0 +1,35 @@
+@import url(../../root.css);
+
+.cooperation {
+  margin: 0 var(--body-margin) var(--main-section-margin) var(--body-margin);
+  text-align: center;
+  color: var(--deep-blue);
+}
+
+.cooperation-title {
+  font: var(--h2-font);
+  margin-bottom: var(--h2-margin);
+}
+
+.cooperation-logos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 1.875rem;
+}
+
+.cooperation-logo-item {
+  width: 10.875rem;
+  height: 4.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--light-blue);
+  border-radius: var(--button-radius);
+}
+
+.cooperation-logo {
+  max-width: 80%;
+  max-height: 80%;
+}

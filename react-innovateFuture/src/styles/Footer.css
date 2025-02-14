@@ -1,0 +1,93 @@
+@import url(root.css);
+
+.footer {
+  padding: 4.75rem var(--body-margin);
+  background-color: var(--primary-blue);
+  color: #fff;
+}
+
+.footer-logo {
+  width: 17rem;
+  height: auto;
+}
+
+.footer-contents-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-link-container:nth-of-type(2) {
+  margin-left: 4rem;
+}
+
+.footer-link-title {
+  margin-bottom: 2rem;
+}
+
+.footer-link-title h5 {
+  font: var(--h5-font);
+}
+
+.footer-link a {
+  font: var(--p-font);
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-link {
+  margin-bottom: var(--p-margin);
+}
+
+.footer-subscribe-container {
+  text-align: right;
+  width: 20.5rem;
+  margin-left: 4rem;
+}
+
+.footer-subscribe-title {
+  font: var(--h5-font);
+  margin-bottom: 2rem;
+}
+
+.footer-subscribe-text {
+  font: var(--p-font);
+  line-height: 1.5rem;
+  margin-bottom: var(--p-margin);
+}
+
+.footer-input-group {
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.footer-input {
+  display: block;
+  width: 13.125rem;
+  height: 2.5rem;
+}
+
+.footer-button-container {
+  margin-left: 0.25rem;
+}
+
+.footer-button {
+  color: #fff;
+  background-color: var(--deep-blue);
+  font: var(--h5-font);
+  padding: var(--button-padding-y) var(--button-padding-x);
+  border-radius: var(--button-radius);
+  border: none;
+}
+
+.footer-copyright-container {
+  text-align: center;
+  margin-top: 8.25rem;
+}

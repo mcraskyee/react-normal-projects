@@ -1,0 +1,49 @@
+@import url(../../root.css);
+
+.mission {
+  background-color: var(--light-gray);
+  padding: var(--main-section-margin) var(--body-margin);
+  color: var(--deep-blue);
+  text-align: center;
+}
+
+.mission-title {
+  font: var(--h2-font);
+  margin-bottom: var(--h2-margin);
+}
+
+.mission-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mission-card {
+  background-color: #fff;
+  width: 23.875rem;
+  height: 28.875rem;
+  overflow: hidden;
+  margin: var(--card-margin);
+  border-radius: var(--card-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.mission-card-image {
+  width: 23.875rem;
+  height: 14.625rem;
+  margin-bottom: 1rem;
+}
+
+.mission-card-text-container {
+  padding: 0 var(--card-padding);
+}
+
+.mission-card-title {
+  font: var(--h5-font);
+  margin-bottom: var(--h5-margin);
+}
+
+.mission-card-text {
+  font: var(--p-font);
+}

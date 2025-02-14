@@ -1,3 +1,5 @@
+import "../../../../styles/pageStyles/Homepage/ServiceSection.css";
+
 const ServiceSection = () => {
   return (
     <section className="service">
@@ -18,10 +20,18 @@ const ServiceSection = () => {
       <div className="service-contents">
         <div className="service-content">
           <div className="service-image-wrapper">
-            <img src="" alt="Learning-picture" className="service-image" />
+            <img
+              src="/homepagePhotos/learning-photo.png"
+              alt="Learning-photo"
+              className="service-image"
+            />
           </div>
           <div className="service-description">
-            <img src="" alt="Learning-icon" className="service-icon" />
+            <img
+              src="/homepagePhotos/learning-icon.svg"
+              alt="Learning-icon"
+              className="service-icon"
+            />
             <h3 className="service-title">Learning</h3>
             <p className="service-text">
               Engage in discussions with professors and mentors about studying
@@ -37,11 +47,12 @@ const ServiceSection = () => {
           </div>
         </div>
         <div className="service-content">
-          <div className="service-image-wrapper">
-            <img src="" alt="Communicating-picture" className="service-image" />
-          </div>
           <div className="service-description">
-            <img src="" alt="Communicating-icon" className="service-icon" />
+            <img
+              src="/homepagePhotos/communicating-icon.svg"
+              alt="Communicating-icon"
+              className="service-icon"
+            />
             <h3 className="service-title">Communicating</h3>
             <p className="service-text">
               Engage in meaningful conversations with local students, learn
@@ -55,13 +66,28 @@ const ServiceSection = () => {
               and professional opportunities.
             </p>
           </div>
+          <div className="service-image-wrapper">
+            <img
+              src="/homepagePhotos/communicating-photo.png"
+              alt="Communicating-photo"
+              className="service-image"
+            />
+          </div>
         </div>
         <div className="service-content">
           <div className="service-image-wrapper">
-            <img src="" alt="Practicing-picture" className="service-image" />
+            <img
+              src="/homepagePhotos/practicing-photo.png"
+              alt="Practicing-photo"
+              className="service-image"
+            />
           </div>
           <div className="service-description">
-            <img src="" alt="Practicing-icon" className="service-icon" />
+            <img
+              src="/homepagePhotos/practicing-icon.svg"
+              alt="Practicing-icon"
+              className="service-icon"
+            />
             <h3 className="service-title">Practicing</h3>
             <p className="service-text">
               Participate in real-world projects via workshop, laying a solid

@@ -7,7 +7,6 @@ import EventAttendSection from "./sections/EventAttendSection";
 const PastEventPage = () => {
   return (
     <div>
-      Past Event
       <EventHeroSection />
       <EventLogoSection />
       <EventIntroductionSection />

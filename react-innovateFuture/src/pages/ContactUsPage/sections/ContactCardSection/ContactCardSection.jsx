@@ -38,13 +38,12 @@ const ContactCardSection = () => {
           <label className="contact-label">Message:</label>
           <textarea
             placeholder="Message"
-            max-length="140"
             className="contact-textarea"
           ></textarea>
           <p>Your message will be copied to the support team.</p>
         </div>
-        <div class="contact-submit-container">
-          <input type="submit" class="contact-submit" />
+        <div className="contact-submit-container">
+          <input type="submit" className="contact-submit" />
         </div>
       </div>
       <div className="contact-information-container">

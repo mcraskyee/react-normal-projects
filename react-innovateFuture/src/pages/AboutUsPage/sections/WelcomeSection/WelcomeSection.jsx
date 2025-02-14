@@ -1,3 +1,5 @@
+import "../../../../styles/pageStyles/AboutUsPage/WelcomeSection.css";
+
 const WelcomeSection = () => {
   return (
     <section className="welcome">
@@ -13,7 +15,11 @@ const WelcomeSection = () => {
         entrepreneurs can learn, grow, and succeed.
       </p>
       <div className="welcome-image-container">
-        <img src="" alt="Welcome to IFA" className="welcome-image" />
+        <img
+          src="/aboutUsPagePhotos/cuate.png"
+          alt="Welcome to IFA"
+          className="welcome-image"
+        />
       </div>
     </section>
   );

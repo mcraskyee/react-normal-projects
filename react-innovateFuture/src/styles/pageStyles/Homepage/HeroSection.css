@@ -1,0 +1,39 @@
+@import url(../../root.css);
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 var(--body-margin) var(--main-section-margin) var(--body-margin);
+  color: var(--deep-blue)
+}
+
+.hero-content-container {
+  width: 30rem;
+}
+
+.hero-title {
+  font: var(--h1-font);
+  margin-bottom: var(--h1-margin);
+}
+
+.hero-subtitle {
+  font: var(--h4-font);
+  margin-bottom: var(--h4-margin);
+}
+
+.hero-button {
+  font: var(--p-font);
+  background-color: var(--primary-orange);
+  color: #fff;
+  padding: var(--button-padding-y) var(--button-padding-x);
+  margin-top: var(--button-margin);
+  border: none;
+  border-radius: var(--button-radius);
+}
+
+.hero-image {
+  display: block;
+  width: 43.25rem;
+  height: auto;
+}

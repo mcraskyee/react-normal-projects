@@ -1,0 +1,60 @@
+@import url(root.css);
+
+.nav {
+  padding: var(--h2-margin) var(--body-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  display: block;
+  width: 17rem;
+  height: 4rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  margin-left: var(--link-margin);
+  list-style: none;
+}
+
+.nav-link a {
+  text-decoration: none;
+}
+
+.nav-link a:active {
+  color: var(--primary-orange);
+}
+
+.nav-link a:visited {
+  color: var(--deep-blue);
+}
+
+.nav-button-container {
+  margin-left: var(--link-margin);
+}
+
+.nav-button {
+  background-color: var(--primary-orange);
+  color: #fff;
+  padding: var(--button-padding-y) var(--button-padding-x);
+  border-radius: var(--button-radius);
+  border: none;
+}
+
+.nav-button:hover {
+  background-color: var(--deep-blue);
+  cursor: pointer;
+}
