@@ -8,46 +8,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* font */
-  --h1-font: 700 3.75rem var(--font);
-  --h2-font: 600 2.25rem var(--font);
-  --h3-font: 600 1.875rem var(--font);
-  --h4-font: 500 1.5rem var(--font);
-  --h5-font: 500 1.25rem var(--font);
-  --p-font: 400 var(--font-size) var(--font);
-
-  /* line-height */
-  --paragraph-line-height: 1.5rem;
-
-  /* margin and padding */
-  --body-margin: 7.5rem;
-  --main-section-margin: 5rem;
-  --sub-section-margin: 3rem;
-  --detail-section-margin: 2rem;
-  --h1-margin: 1.5rem;
-  --h2-margin: 1.25rem;
-  --h3-margin: 1rem;
-  --h4-margin: 0.75rem;
-  --h5-margin: 0.5rem;
-  --p-margin: 1rem;
-  --link-margin: 4rem;
-  --button-margin: 2rem;
-  --button-padding-y: 0.5rem;
-  --button-padding-x: 1rem;
-  --picture-margin: 2.5rem;
-  --card-margin: 1.25rem;
-  --card-padding: 1.5rem;
-
-  /* radius */
-  --button-radius: 0.25rem;
-  --card-radius: 1rem;
-
-  /* text-frame-size */
-  --text-frame-size: 55rem;
-
-  /* box-shadow */
-  --box-shadow: 0 5px 15px rgba(5, 34, 79, 0.1);
-
   /* color */
   --primary-blue: #046FFB;
   --primary-orange: #F36D26;
@@ -56,4 +16,103 @@
   --color-pink: #DDB3E3;
   --light-gray: #F9F9F9;
   --hero-blue: #BEE7F9;
+
+  /* font */
+  /* size */
+  --h1-font: 700 3.75rem var(--font);
+  --h2-font: 600 2.25rem var(--font);
+  --h3-font: 600 1.875rem var(--font);
+  --h4-font: 500 1.5rem var(--font);
+  --h5-font: 500 1.25rem var(--font);
+  --p-font: 400 var(--font-size) var(--font);
+  /* margin */
+  --h1-margin: 1.5rem;
+  --h2-margin: 1.25rem;
+  --h3-margin: 1rem;
+  --h4-margin: 0.75rem;
+  --h5-margin: 0.5rem;
+  --p-margin: 1rem;
+  /* line height */
+  --paragraph-line-height: 1.5rem;
+
+
+  /* main-part */
+  /* margin */
+  --body-margin: 7.5rem;
+  --main-section-margin: 5rem;
+  --sub-section-margin: 3rem;
+  --detail-section-margin: 2rem;
+
+
+  /* home & about page */
+  /* main logo */
+  --main-logo-width: 17rem;
+  /* homepage-cooperation logo */
+  --cooperation-logo-gap: 1.875rem;
+  --cooperation-logo-size: 80%;
+  --cooperation-logo-frame-width: 10.875rem;
+  --cooperation-logo-frame-height: 4.875rem;
+  --cooperation-logo-frame-border: 1px solid var(--light-blue);
+  /* link */
+  --link-margin: 4rem;
+  /* button */
+  --button-margin: 2rem;
+  --button-padding: 0.5rem 1rem;
+  --button-radius: 0.25rem;
+  /* image */
+  --image-width: 43.25rem;
+  --secondary-image-width: 32.5rem;
+  --image-margin: 2.5rem;
+  /* card */
+  --welcome-card-width: 23.875rem;
+  --welcome-card-height: 28.875rem;
+  --card-margin: 1.25rem;
+  --card-padding: 1.5rem;
+  --card-radius: 1rem;
+  --box-shadow: 0 5px 15px rgba(5, 34, 79, 0.1);
+  /* container size */
+  --content-size: 30rem;
+  --secondary-content-size: 25rem;
+  --paragraph-frame-size: 55rem;
+
+  /* event page */
+  /* logo */
+  --event-cooperation-logo-height: 3rem;
+  /* introduction */
+  --event-introduction-image-height: 32rem;
+  /* card */
+  --event-card-width: 20.75rem;
+  --event-card-margin: 1.5rem;
+  --event-activities-card-height: 50rem;
+  --event-activities-card-padding: 4rem 2rem;
+  --event-attend-card-padding: 2rem;
+  --event-activities-card-border: 5px solid #fff;
+
+  /* contact page */
+  /* label */
+  --label-margin-bottom: 0.375rem;
+  /* input */
+  --input-width: 12rem;
+  --input-height: 2.5rem;
+  --input-margin-right: 4rem;
+  --input-margin-bottom: 2.5rem;
+  --input-padding: 3rem 0 3rem 5rem;
+  /* information side */
+  --information-padding: 2.5rem 3rem;
+  --icon-margin: 1rem;
+
+  /* footer */
+  /* margin */
+  --footer-detail-margin: 4rem;
+  --footer-title-margin: 2rem;
+  --footer-button-margin: 0.25rem;
+  --footer-copyright-margin: 8.25rem;
+  /* padding */
+  --footer-padding-top: 4.75rem;
+  /* size */
+  --footer-subscribe-width: 20.5rem;
+  --footer-input-width: 13.125rem;
+  --footer-input-height: 2.5rem;
+  /* line-height */
+  --footer-line-height: 1.5rem;
 }

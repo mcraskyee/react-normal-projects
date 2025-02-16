@@ -20,9 +20,9 @@
 }
 
 .event-attend-card {
-  width: 20.75rem;
+  width: var(--event-card-width);
   height: auto;
-  margin-right: 1.5rem;
+  margin-right: var(--event-card-margin);
   margin-bottom: var(--main-section-margin);
   box-shadow: var(--box-shadow);
   border-radius: var(--card-radius);
@@ -31,12 +31,12 @@
 
 .event-attend-image-container {
   background-color: var(--hero-blue);
-  padding: 2rem 0;
-  margin-bottom: var(--picture-margin);
+  padding: var(--event-attend-card-padding) 0;
+  margin-bottom: var(--image-margin);
 }
 
 .event-attend-image {
-  height: 10.75rem;
+  height: calc(var(--event-card-width) / 1.618);
   width: auto;
 }
 
@@ -45,7 +45,9 @@
   margin-bottom: var(--h4-margin);
 }
 
-.event-attend-card-text {
+.event-attend-card-paragraph {
   font: var(--p-font);
-  padding: 0 2rem 2rem 2rem;
+  padding-right: var(--event-card-margin);
+  padding-bottom: var(--event-card-margin);
+  padding-left: var(--event-card-margin);
 }

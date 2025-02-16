@@ -5,7 +5,7 @@ const ServiceSection = () => {
     <section className="service">
       <div className="service-summary">
         <h2 className="service-summary-title">What We Can Do</h2>
-        <p className="service-summary-text">
+        <p className="service-summary-paragraph">
           We offer a dynamic platform designed to help individuals grow both
           personally and professionally. Through meaningful interactions with
           experts and peers, participants gain valuable insights into global
@@ -33,7 +33,7 @@ const ServiceSection = () => {
               className="service-icon"
             />
             <h3 className="service-title">Learning</h3>
-            <p className="service-text">
+            <p className="service-paragraph">
               Engage in discussions with professors and mentors about studying
               abroad and career planning in the global AI industry. Gain
               insights into the latest AI advancements, industry demands, and
@@ -54,7 +54,7 @@ const ServiceSection = () => {
               className="service-icon"
             />
             <h3 className="service-title">Communicating</h3>
-            <p className="service-text">
+            <p className="service-paragraph">
               Engage in meaningful conversations with local students, learn
               about their study and lifestyle. Exchange ideas on cultural
               differences, academic experiences, and career aspirations,
@@ -89,7 +89,7 @@ const ServiceSection = () => {
               className="service-icon"
             />
             <h3 className="service-title">Practicing</h3>
-            <p className="service-text">
+            <p className="service-paragraph">
               Participate in real-world projects via workshop, laying a solid
               foundation for their future academic and professional development.
               Apply theoretical knowledge to practical challenges, enhancing

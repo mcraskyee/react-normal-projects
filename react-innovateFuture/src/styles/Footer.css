@@ -1,13 +1,13 @@
 @import url(root.css);
 
 .footer {
-  padding: 4.75rem var(--body-margin);
+  padding: var(--footer-padding-top) var(--body-margin);
   background-color: var(--primary-blue);
   color: #fff;
 }
 
 .footer-logo {
-  width: 17rem;
+  width: var(--main-logo-width);
   height: auto;
 }
 
@@ -17,18 +17,18 @@
   align-items: flex-start;
 }
 
-.footer-text-container {
+.footer-paragraph-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
 .footer-link-container:nth-of-type(2) {
-  margin-left: 4rem;
+  margin-left: var(--footer-detail-margin);
 }
 
 .footer-link-title {
-  margin-bottom: 2rem;
+  margin-bottom: var(--footer-title-margin);
 }
 
 .footer-link-title h5 {
@@ -47,18 +47,18 @@
 
 .footer-subscribe-container {
   text-align: right;
-  width: 20.5rem;
-  margin-left: 4rem;
+  width: var(--footer-subscribe-width);
+  margin-left: var(--footer-detail-margin);
 }
 
 .footer-subscribe-title {
   font: var(--h5-font);
-  margin-bottom: 2rem;
+  margin-bottom: var(--footer-title-margin);
 }
 
-.footer-subscribe-text {
+.footer-subscribe-paragraph {
   font: var(--p-font);
-  line-height: 1.5rem;
+  line-height: var(--footer-line-height);
   margin-bottom: var(--p-margin);
 }
 
@@ -70,24 +70,29 @@
 
 .footer-input {
   display: block;
-  width: 13.125rem;
-  height: 2.5rem;
+  width: var(--footer-input-width);
+  height: var(--footer-input-height);
 }
 
 .footer-button-container {
-  margin-left: 0.25rem;
+  margin-left: var(--footer-button-margin);
 }
 
 .footer-button {
   color: #fff;
   background-color: var(--deep-blue);
   font: var(--h5-font);
-  padding: var(--button-padding-y) var(--button-padding-x);
+  padding: var(--button-padding);
   border-radius: var(--button-radius);
   border: none;
 }
 
+.footer-button:hover {
+  cursor: pointer;
+  background-color: var(--primary-orange);
+}
+
 .footer-copyright-container {
   text-align: center;
-  margin-top: 8.25rem;
+  margin-top: var(--footer-copyright-margin);
 }

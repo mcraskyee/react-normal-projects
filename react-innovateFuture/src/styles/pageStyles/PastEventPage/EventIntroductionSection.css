@@ -2,7 +2,7 @@
 
 .event-introduction {
   background-image: url(/pastEventPagePhotos/intro-background.png);
-  height: 32rem;
+  height: var(--event-introduction-image-height);
   width: 100vw;
   color: var(--deep-blue);
   display: flex;
@@ -17,7 +17,7 @@
   margin-bottom: var(--h1-margin);
 }
 
-.event-introduction-text {
+.event-introduction-paragraph {
   font: var(--p-font);
-  width: var(--text-frame-size);
+  width: var(--paragraph-frame-size);
 }

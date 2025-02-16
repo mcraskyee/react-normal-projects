@@ -7,7 +7,7 @@ const WelcomeSection = () => {
       <h2 className="welcome-subtitle">
         Empowering the Next Generation of Innovators
       </h2>
-      <p className="welcome-text">
+      <p className="welcome-paragraph">
         At Innovate Future Association Inc., we believe in the power of
         technology and innovation to transform lives and shape a brighter
         future. Our mission is to bridge communities, foster talent, and create

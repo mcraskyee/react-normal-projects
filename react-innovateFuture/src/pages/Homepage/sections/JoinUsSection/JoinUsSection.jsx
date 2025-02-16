@@ -12,7 +12,7 @@ const JoinUsSection = () => {
       </div>
       <div className="join-content-container">
         <h2 className="join-title">Join Us</h2>
-        <p className="join-text">
+        <p className="join-paragraph">
           Whether you’re an aspiring engineer, a seasoned professional, or a
           supporter of innovation, IFA welcomes you to join our journey.
           Together, we can create opportunities, empower communities, and build

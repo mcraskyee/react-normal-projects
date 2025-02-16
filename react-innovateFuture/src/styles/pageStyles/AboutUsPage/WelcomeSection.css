@@ -19,8 +19,8 @@
   margin-bottom: var(--h2-margin);
 }
 
-.welcome-text {
-  width: var(--text-frame-size);
+.welcome-paragraph {
+  width: var(--paragraph-frame-size);
   font: var(--p-font);
   line-height: var(--paragraph-line-height);
   text-align: center;
@@ -28,10 +28,10 @@
 }
 
 .welcome-image-container {
-  margin-top: var(--picture-margin);
+  margin-top: var(--image-margin);
 }
 
 .welcome-image {
-  width: 32.5rem;
+  width: var(--secondary-image-width);
   height: auto;
 }

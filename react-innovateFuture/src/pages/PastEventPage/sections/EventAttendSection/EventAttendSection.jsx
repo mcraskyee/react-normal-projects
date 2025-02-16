@@ -14,7 +14,7 @@ const EventAttendSection = () => {
             />
           </div>
           <h4 className="event-attend-card-title">LEARNING</h4>
-          <p className="event-attend-card-text">
+          <p className="event-attend-card-paragraph">
             Students will participate in real-world projects via workshop,
             laying a solid foundation for their future academic and professional
             development. Students will showcase the real-time translators they
@@ -32,7 +32,7 @@ const EventAttendSection = () => {
             />
           </div>
           <h4 className="event-attend-card-title">COMMUNICATING</h4>
-          <p className="event-attend-card-text">
+          <p className="event-attend-card-paragraph">
             Students will engage in meaningful conversations with local
             students, learn about their study and lifestyle, and experience the
             authentic atmosphere of university life. After study, student will
@@ -49,7 +49,7 @@ const EventAttendSection = () => {
             />
           </div>
           <h4 className="event-attend-card-title">VISITING</h4>
-          <p className="event-attend-card-text">
+          <p className="event-attend-card-paragraph">
             Student will visit iconic landmark of Sydney, the Sydney Opera
             House, and take a stroll through the Royal Botanic Garden, enjoying
             the natural beauty and urban scenery along the way. And then explore

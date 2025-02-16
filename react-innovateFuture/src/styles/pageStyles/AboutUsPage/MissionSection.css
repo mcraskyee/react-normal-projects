@@ -21,8 +21,8 @@
 
 .mission-card {
   background-color: #fff;
-  width: 23.875rem;
-  height: 28.875rem;
+  width: var(--welcome-card-width);
+  height: var(--welcome-card-height);
   overflow: hidden;
   margin: var(--card-margin);
   border-radius: var(--card-radius);
@@ -30,12 +30,12 @@
 }
 
 .mission-card-image {
-  width: 23.875rem;
-  height: 14.625rem;
-  margin-bottom: 1rem;
+  width: var(--welcome-card-width);
+  height: calc(var(--welcome-card-width) / 1.618);
+  margin-bottom: var(--card-margin);
 }
 
-.mission-card-text-container {
+.mission-card-paragraph-container {
   padding: 0 var(--card-padding);
 }
 
@@ -44,6 +44,6 @@
   margin-bottom: var(--h5-margin);
 }
 
-.mission-card-text {
+.mission-card-paragraph {
   font: var(--p-font);
 }

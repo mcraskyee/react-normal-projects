@@ -22,11 +22,11 @@
 }
 
 .event-activities-card {
-  width: 20.75rem;
-  height: 50rem;
-  margin-right: 1.5rem;
-  padding: 4rem 2rem;
-  border: 5px solid #fff;
+  width: var(--event-card-width);
+  height: var(--event-activities-card-height);
+  margin-right: var(--event-card-margin);
+  padding: var(--event-activities-card-padding);
+  border: var(--event-activities-card-border);
 }
 
 .event-activities-card-title {

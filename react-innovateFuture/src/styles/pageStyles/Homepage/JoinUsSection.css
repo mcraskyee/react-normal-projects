@@ -1,7 +1,9 @@
 @import url(../../root.css);
 
 .join {
-  margin: 0 var(--body-margin) var(--main-section-margin) var(--body-margin);
+  margin-right: var(--body-margin);
+  margin-bottom: var(--main-section-margin);
+  margin-left: var(--body-margin);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,11 +11,11 @@
 }
 
 .join-image {
-  width: 32.5rem;
+  width: var(--secondary-image-width);
 }
 
 .join-content-container {
-  width: 25rem;
+  width: var(--secondary-content-size);
   text-align: right;
 }
 
@@ -22,9 +24,10 @@
   margin-bottom: var(--h2-margin);
 }
 
-.join-text {
+.join-paragraph {
   font: var(--p-font);
   margin-bottom: var(--p-margin);
+  line-height: var(--paragraph-line-height);
 }
 
 .join-button-group {
@@ -35,7 +38,7 @@
 
 .join-button {
   margin-left: var(--button-margin);
-  padding: var(--button-padding-y) var(--button-padding-x);
+  padding: var(--button-padding);
   background-color: var(--deep-blue);
   border-radius: var(--button-radius);
   border: none;

@@ -1,7 +1,9 @@
 @import url(../../root.css);
 
 .cooperation {
-  margin: 0 var(--body-margin) var(--main-section-margin) var(--body-margin);
+  margin-right: var(--body-margin);
+  margin-bottom: var(--main-section-margin);
+  margin-left: var(--body-margin);
   text-align: center;
   color: var(--deep-blue);
 }
@@ -16,20 +18,20 @@
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
-  gap: 1.875rem;
+  gap: var(--cooperation-logo-gap);
 }
 
-.cooperation-logo-item {
-  width: 10.875rem;
-  height: 4.875rem;
+.cooperation-logo-frame {
+  width: var(--cooperation-logo-frame-width);
+  height: var(--cooperation-logo-frame-height);
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--light-blue);
-  border-radius: var(--button-radius);
+  border: var(--cooperation-logo-frame-border);
+  border-radius: var(--card-radius);
 }
 
 .cooperation-logo {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: var(--cooperation-logo-size);
+  max-height: var(--cooperation-logo-size);
 }

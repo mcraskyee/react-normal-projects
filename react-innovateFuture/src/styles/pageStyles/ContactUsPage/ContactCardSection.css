@@ -14,15 +14,15 @@
 
 .contact-inputs {
   color: var(--deep-blue);
-  margin-right: 4rem;
-  padding: 3rem 0 3rem 5rem;
+  margin-right: var(--input-margin-right);
+  padding: var(--input-padding);
 }
 
 .contact-groups {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  margin-bottom: 2.5rem;
+  margin-bottom: var(--input-margin-bottom);
 }
 
 .contact-group {
@@ -33,13 +33,13 @@
 }
 
 .contact-label {
-  margin-bottom: 0.375rem;
+  margin-bottom: var(--label-margin-bottom);
 }
 
 .contact-input {
-  min-width: 12rem;
-  height: 2.5rem;
-  margin-right: 4rem;
+  min-width: var(--input-width);
+  height: var(--input-height);
+  margin-right: var(--input-margin-right);
 }
 
 .contact-message {
@@ -49,8 +49,8 @@
 }
 
 .contact-textarea {
-  width: calc(12rem * 2 + 1rem);
-  height: calc(2.5rem * 2);
+  width: calc(var(--input-width) * 2 + 1rem);
+  height: calc(var(--input-height) * 2);
   resize: none;
   overflow-x: hidden;
 }
@@ -58,7 +58,7 @@
 .contact-submit {
   background-color: var(--primary-orange);
   color: #fff;
-  padding: var(--button-padding-y) var(--button-padding-x);
+  padding: var(--button-padding);
   border-radius: var(--button-radius);
   border: none;
 }
@@ -71,7 +71,7 @@
 .contact-information-container {
   background-color: var(--primary-orange);
   color: #fff;
-  padding: 2.5rem 3rem;
+  padding: var(--information-padding);
 }
 
 .contact-information-title {
@@ -79,7 +79,7 @@
   margin-bottom: var(--h5-margin);
 }
 
-.contact-information-text {
+.contact-information-paragraph {
   font: var(--p-margin);
   margin-bottom: var(--p-margin);
 }
@@ -92,11 +92,11 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: var(--input-margin-bottom);
 }
 
 .contact-information-icon {
-  margin-right: 1.5rem;
+  margin-right: var(--icon-margin);
 }
 
 .contact-social-group {
@@ -106,5 +106,5 @@
 }
 
 .contact-social-container {
-  margin: 1rem;
+  margin: var(--icon-margin);
 }

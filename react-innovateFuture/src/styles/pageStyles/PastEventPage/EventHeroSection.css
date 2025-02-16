@@ -28,7 +28,7 @@
   font: var(--h3-font);
   background-color: var(--primary-orange);
   color: #fff;
-  padding: 1rem;
+  padding: var(--card-padding);
   border-radius: var(--card-radius);
 }
 

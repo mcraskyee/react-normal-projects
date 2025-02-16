@@ -9,11 +9,11 @@
 }
 
 .support-image {
-  width: 32.5rem;
+  width: var(--secondary-image-width);
 }
 
 .support-content-container {
-  width: 25rem;
+  width: var(--secondary-content-size);
   text-align: left;
 }
 
@@ -22,13 +22,14 @@
   margin-bottom: var(--h2-margin);
 }
 
-.support-text {
+.support-paragraph {
   font: var(--p-font);
   margin-bottom: var(--p-margin);
+  line-height: var(--paragraph-line-height);
 }
 
 .support-button {
-  padding: var(--button-padding-y) var(--button-padding-x);
+  padding: var(--button-padding);
   background-color: var(--deep-blue);
   border-radius: var(--button-radius);
   border: none;

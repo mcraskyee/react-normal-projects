@@ -68,7 +68,7 @@ const ContactCardSection = () => {
       </form>
       <div className="contact-information-container">
         <h5 className="contact-information-title">Contact Information</h5>
-        <p className="contact-information-text">
+        <p className="contact-information-paragraph">
           Please fill up the form and our team will get back to you soon.{" "}
         </p>
         <ul className="contact-information-methods">

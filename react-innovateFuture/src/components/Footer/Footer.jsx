@@ -12,7 +12,7 @@ const Footer = () => {
             className="footer-logo"
           />
         </div>
-        <div className="footer-text-container">
+        <div className="footer-paragraph-container">
           <ul className="footer-link-container">
             <li className="footer-link-title">
               <h5>Navigation</h5>
@@ -49,7 +49,7 @@ const Footer = () => {
           </ul>
           <div className="footer-subscribe-container">
             <h4 className="footer-subscribe-title">Subscribe Newsletter</h4>
-            <p className="footer-subscribe-text">
+            <p className="footer-subscribe-paragraph">
               Subscribe our newsletter to get updates about our services and
               offers
             </p>

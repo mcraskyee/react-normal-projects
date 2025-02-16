@@ -10,5 +10,5 @@
 
 .event-logo {
   width: auto;
-  height: 3rem;
+  height: var(--event-cooperation-logo-height);
 }
