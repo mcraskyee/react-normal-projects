@@ -1,3 +1,5 @@
+import "../../../../styles/pageStyles/PastEventPage/EventActivitiesSection.css";
+
 const EventActivitiesSection = () => {
   return (
     <section className="event-activities">
@@ -16,10 +18,10 @@ const EventActivitiesSection = () => {
             <li className="event-activities-card-item">11:30, Workshop</li>
             <li className="event-activities-card-item">12:00, Lunch</li>
             <li className="event-activities-card-item">
-              13:30, USYD Computer science venue activity
+              13:30, UniSydney Computer science venue activity
             </li>
             <li className="event-activities-card-item">
-              16:00, Campus Tour, USYD venue and Amazon venue
+              16:00, Campus Tour, UniSydney venue and Amazon venue
             </li>
           </ul>
         </div>
@@ -39,8 +41,8 @@ const EventActivitiesSection = () => {
               we think about the world.
             </li>
             <li className="event-activities-card-item">
-              11:10, A short-cut screening of ‘PROJECT Q: War, Peace, and
-              Quantum Mechanics’
+              11:10, A short-cut screening of PROJECT Q: War, Peace, and Quantum
+              Mechanics
             </li>
             <li className="event-activities-card-item">
               11:50, A Q&A session in response to the documentary

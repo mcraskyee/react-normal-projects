@@ -1,0 +1,38 @@
+@import url(../../root.css);
+
+.event-hero {
+  background-color: var(--hero-blue);
+  color: var(--deep-blue);
+}
+
+.event-hero-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: var(--main-section-margin);
+}
+
+.event-hero-title {
+  font: var(--h1-font);
+  margin-bottom: var(--h1-margin);
+}
+
+.event-hero-subtitle {
+  font: var(--h2-font);
+  margin-bottom: var(--h2-margin);
+}
+
+.event-hero-time {
+  font: var(--h3-font);
+  background-color: var(--primary-orange);
+  color: #fff;
+  padding: 1rem;
+  border-radius: var(--card-radius);
+}
+
+.event-hero-image {
+  width: 100vw;
+  height: auto;
+}

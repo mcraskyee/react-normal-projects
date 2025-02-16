@@ -46,7 +46,8 @@
   --text-frame-size: 55rem;
 
   /* box-shadow */
-  --box-shadow: 0 15px 15px rgba(5, 34, 79, 0.1);
+  --box-shadow: 0 5px 15px rgba(5, 34, 79, 0.1);
+
   /* color */
   --primary-blue: #046FFB;
   --primary-orange: #F36D26;
@@ -54,4 +55,5 @@
   --light-blue: #E8EFFA;
   --color-pink: #DDB3E3;
   --light-gray: #F9F9F9;
+  --hero-blue: #BEE7F9;
 }

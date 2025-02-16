@@ -1,0 +1,23 @@
+@import url(../../root.css);
+
+.event-introduction {
+  background-image: url(/pastEventPagePhotos/intro-background.png);
+  height: 32rem;
+  width: 100vw;
+  color: var(--deep-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.event-introduction-title {
+  font: var(--h1-font);
+  margin-bottom: var(--h1-margin);
+}
+
+.event-introduction-text {
+  font: var(--p-font);
+  width: var(--text-frame-size);
+}

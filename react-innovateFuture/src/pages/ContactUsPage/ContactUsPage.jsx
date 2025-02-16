@@ -1,10 +1,10 @@
-import ContactTitleSection from "./sections/ContactTitleSection";
+import ContactHeadingSection from "./sections/ContactHeadingSection";
 import ContactCardSection from "./sections/ContactCardSection";
 
 const ContactUsPage = () => {
   return (
     <div>
-      <ContactTitleSection />
+      <ContactHeadingSection />
       <ContactCardSection />
     </div>
   );

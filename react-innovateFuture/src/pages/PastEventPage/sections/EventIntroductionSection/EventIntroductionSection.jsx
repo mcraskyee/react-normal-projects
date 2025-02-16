@@ -1,3 +1,5 @@
+import "../../../../styles/pageStyles/PastEventPage/EventIntroductionSection.css";
+
 const EventIntroductionSection = () => {
   return (
     <section className="event-introduction">

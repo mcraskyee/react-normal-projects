@@ -1,0 +1,20 @@
+@import url(../../root.css);
+
+.contact-heading {
+  color: var(--deep-blue);
+  margin-top: var(--detail-section-margin);
+  margin-bottom: var(--main-section-margin);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-heading-title {
+  font: var(--h1-font);
+  margin-bottom: var(--h1-margin);
+}
+
+.contact-heading-text {
+  font: var(--p-margin);
+}

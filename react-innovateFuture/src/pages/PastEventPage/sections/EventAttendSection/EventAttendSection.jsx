@@ -1,3 +1,5 @@
+import "../../../../styles/pageStyles/PastEventPage/EventAttendSection.css";
+
 const EventAttendSection = () => {
   return (
     <section className="event-attend">
@@ -5,7 +7,11 @@ const EventAttendSection = () => {
       <div className="event-attend-cards">
         <div className="event-attend-card">
           <div className="event-attend-image-container">
-            <img src="" alt="" className="event-attend-image" />
+            <img
+              src="/pastEventPagePhotos/rafiki.png"
+              alt="learning"
+              className="event-attend-image"
+            />
           </div>
           <h4 className="event-attend-card-title">LEARNING</h4>
           <p className="event-attend-card-text">
@@ -19,7 +25,11 @@ const EventAttendSection = () => {
         </div>
         <div className="event-attend-card">
           <div className="event-attend-image-container">
-            <img src="" alt="" className="event-attend-image" />
+            <img
+              src="/pastEventPagePhotos/pana.png"
+              alt="communicating"
+              className="event-attend-image"
+            />
           </div>
           <h4 className="event-attend-card-title">COMMUNICATING</h4>
           <p className="event-attend-card-text">
@@ -32,13 +42,17 @@ const EventAttendSection = () => {
         </div>
         <div className="event-attend-card">
           <div className="event-attend-image-container">
-            <img src="" alt="" className="event-attend-image" />
+            <img
+              src="/pastEventPagePhotos/amico.png"
+              alt="visiting"
+              className="event-attend-image"
+            />
           </div>
           <h4 className="event-attend-card-title">VISITING</h4>
           <p className="event-attend-card-text">
-            Student will visit Sydney's iconic landmark, the Sydney Opera House,
-            and take a stroll through the Royal Botanic Garden, enjoying the
-            natural beauty and urban scenery along the way. And then explore
+            Student will visit iconic landmark of Sydney, the Sydney Opera
+            House, and take a stroll through the Royal Botanic Garden, enjoying
+            the natural beauty and urban scenery along the way. And then explore
             Hyde Park, the Queen Victoria Building, and Sydney Town Hall.
           </p>
         </div>

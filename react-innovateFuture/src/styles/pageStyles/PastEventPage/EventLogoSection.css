@@ -1,0 +1,14 @@
+@import url(../../root.css);
+
+.event-logos {
+  margin: var(--main-section-margin) var(--body-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.event-logo {
+  width: auto;
+  height: 3rem;
+}

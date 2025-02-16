@@ -1,0 +1,44 @@
+@import url(../../root.css);
+
+.event-activities {
+  background-color: var(--primary-blue);
+  color: #fff;
+  padding-top: var(--main-section-margin);
+  padding-right: var(--body-margin);
+  padding-bottom: var(--main-section-margin);
+  padding-left: var(--body-margin);
+}
+
+.event-activities-title {
+  font: var(--h1-font);
+  margin-bottom: var(--h1-margin);
+  text-align: center;
+}
+
+.event-activities-cards {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.event-activities-card {
+  width: 20.75rem;
+  height: 50rem;
+  margin-right: 1.5rem;
+  padding: 4rem 2rem;
+  border: 5px solid #fff;
+}
+
+.event-activities-card-title {
+  font: var(--h5-font);
+  margin-bottom: var(--h5-margin);
+}
+
+.event-activities-card-list {
+  margin-top: var(--detail-section-margin);
+}
+
+.event-activities-card-item {
+  font: var(--p-font);
+  margin-bottom: var(--p-margin);
+}

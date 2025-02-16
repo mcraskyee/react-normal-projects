@@ -1,3 +1,5 @@
+import "../../../../styles/pageStyles/PastEventPage/EventHeroSection.css";
+
 const EventHeroSection = () => {
   return (
     <section className="event-hero">
@@ -10,7 +12,11 @@ const EventHeroSection = () => {
         <h3 className="event-hero-time">Thu, 23/01/2025 - Sat, 25/01/2025</h3>
       </div>
       <div className="event-hero-image-container">
-        <img src="" alt="GenAI" className="event-hero-image" />
+        <img
+          src="/pastEventPagePhotos/hero-background.svg"
+          alt="GenAI"
+          className="event-hero-image"
+        />
       </div>
     </section>
   );

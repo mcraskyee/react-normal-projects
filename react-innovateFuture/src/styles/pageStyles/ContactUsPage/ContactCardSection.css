@@ -1,0 +1,110 @@
+@import url(../../root.css);
+
+.contact {
+  margin-right: var(--body-margin);
+  margin-bottom: var(--main-section-margin);
+  margin-left: var(--body-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: var(--light-gray);
+  border-radius: var(--card-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.contact-inputs {
+  color: var(--deep-blue);
+  margin-right: 4rem;
+  padding: 3rem 0 3rem 5rem;
+}
+
+.contact-groups {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 2.5rem;
+}
+
+.contact-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.contact-label {
+  margin-bottom: 0.375rem;
+}
+
+.contact-input {
+  min-width: 12rem;
+  height: 2.5rem;
+  margin-right: 4rem;
+}
+
+.contact-message {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--detail-section-margin);
+}
+
+.contact-textarea {
+  width: calc(12rem * 2 + 1rem);
+  height: calc(2.5rem * 2);
+  resize: none;
+  overflow-x: hidden;
+}
+
+.contact-submit {
+  background-color: var(--primary-orange);
+  color: #fff;
+  padding: var(--button-padding-y) var(--button-padding-x);
+  border-radius: var(--button-radius);
+  border: none;
+}
+
+.contact-submit:hover {
+  cursor: pointer;
+  background-color: var(--deep-blue);
+}
+
+.contact-information-container {
+  background-color: var(--primary-orange);
+  color: #fff;
+  padding: 2.5rem 3rem;
+}
+
+.contact-information-title {
+  font: var(--h5-font);
+  margin-bottom: var(--h5-margin);
+}
+
+.contact-information-text {
+  font: var(--p-margin);
+  margin-bottom: var(--p-margin);
+}
+
+.contact-information-methods {
+  margin: var(--detail-section-margin) 0;
+}
+
+.contact-information-method {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contact-information-icon {
+  margin-right: 1.5rem;
+}
+
+.contact-social-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-social-container {
+  margin: 1rem;
+}
