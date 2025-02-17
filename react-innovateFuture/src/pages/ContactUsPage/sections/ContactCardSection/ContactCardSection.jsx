@@ -1,4 +1,5 @@
 import "../../../../styles/pageStyles/ContactUsPage/ContactCardSection.css";
+import { contacts, socialMedia } from "../../../../data/contactUsPageData";
 
 const ContactCardSection = () => {
   return (
@@ -72,81 +73,29 @@ const ContactCardSection = () => {
           Please fill up the form and our team will get back to you soon.{" "}
         </p>
         <ul className="contact-information-methods">
-          <li className="contact-information-method">
-            <img
-              src="/contactUsPagePhotos/email.svg"
-              alt="email"
-              className="contact-information-icon"
-            />
-            <p className="contact-information-detail">
-              dexter@innovatefuture.foundation
-            </p>
-          </li>
-          <li className="contact-information-method">
-            <img
-              src="/contactUsPagePhotos/phone.svg"
-              alt="phone"
-              className="contact-information-icon"
-            />
-            <p className="contact-information-detail">+61466960999</p>
-          </li>
-          <li className="contact-information-method">
-            <img
-              src="/contactUsPagePhotos/address.svg"
-              alt="address"
-              className="contact-information-icon"
-            />
-            <p className="contact-information-detail">
-              Sydney NSW 2000 Australia
-            </p>
-          </li>
+          {contacts.map((contact) => (
+            <li key={contact.id} className="contact-information-method">
+              <img
+                src={contact.icon}
+                alt={contact.name}
+                className="contact-information-icon"
+              />
+              <p className="contact-information-detail">{contact.detail}</p>
+            </li>
+          ))}
         </ul>
         <ul className="contact-social-group">
-          <li className="contact-social-container">
-            <a href="#">
-              <img
-                src="/contactUsPagePhotos/twitter.svg"
-                alt="twitter"
-                className="contact-social"
-              />
-            </a>
-          </li>
-          <li className="contact-social-container">
-            <a href="#">
-              <img
-                src="/contactUsPagePhotos/facebook.svg"
-                alt="facebook"
-                className="contact-social"
-              />
-            </a>
-          </li>
-          <li className="contact-social-container">
-            <a href="#">
-              <img
-                src="/contactUsPagePhotos/linkedin.svg"
-                alt="linkedin"
-                className="contact-social"
-              />
-            </a>
-          </li>
-          <li className="contact-social-container">
-            <a href="#">
-              <img
-                src="/contactUsPagePhotos/instagram.svg"
-                alt="instagram"
-                className="contact-social"
-              />
-            </a>
-          </li>
-          <li className="contact-social-container">
-            <a href="#">
-              <img
-                src="/contactUsPagePhotos/xiaohongshu.svg"
-                alt="xiaohongshu"
-                className="contact-social"
-              />
-            </a>
-          </li>
+          {socialMedia.map((media) => (
+            <li key={media.id} className="contact-social-container">
+              <a href={media.link}>
+                <img
+                  src={media.icon}
+                  alt={media.name}
+                  className="contact-social"
+                />
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </section>

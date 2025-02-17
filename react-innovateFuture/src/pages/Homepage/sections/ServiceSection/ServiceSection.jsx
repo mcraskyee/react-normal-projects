@@ -1,4 +1,5 @@
 import "../../../../styles/pageStyles/Homepage/ServiceSection.css";
+import { services } from "../../../../data/homepageData";
 
 const ServiceSection = () => {
   return (
@@ -18,90 +19,49 @@ const ServiceSection = () => {
         </p>
       </div>
       <div className="service-contents">
-        <div className="service-content">
-          <div className="service-image-wrapper">
-            <img
-              src="/homepagePhotos/learning-photo.png"
-              alt="Learning-photo"
-              className="service-image"
-            />
-          </div>
-          <div className="service-description">
-            <img
-              src="/homepagePhotos/learning-icon.svg"
-              alt="Learning-icon"
-              className="service-icon"
-            />
-            <h3 className="service-title">Learning</h3>
-            <p className="service-paragraph">
-              Engage in discussions with professors and mentors about studying
-              abroad and career planning in the global AI industry. Gain
-              insights into the latest AI advancements, industry demands, and
-              academic pathways through expert-led seminars. Participate in
-              hands-on workshops to develop technical skills and practical
-              experience. Explore internship and research opportunities that
-              enhance career prospects. Collaborate with peers on innovative
-              projects, fostering problem-solving abilities and global
-              perspectives in AI.
-            </p>
-          </div>
-        </div>
-        <div className="service-content">
-          <div className="service-description">
-            <img
-              src="/homepagePhotos/communicating-icon.svg"
-              alt="Communicating-icon"
-              className="service-icon"
-            />
-            <h3 className="service-title">Communicating</h3>
-            <p className="service-paragraph">
-              Engage in meaningful conversations with local students, learn
-              about their study and lifestyle. Exchange ideas on cultural
-              differences, academic experiences, and career aspirations,
-              fostering mutual understanding and collaboration. Participate in
-              group discussions, language exchange sessions, and teamwork-based
-              activities to enhance cross-cultural communication skills. Build
-              lasting connections, develop a global mindset, and gain valuable
-              perspectives that prepare you for future international academic
-              and professional opportunities.
-            </p>
-          </div>
-          <div className="service-image-wrapper">
-            <img
-              src="/homepagePhotos/communicating-photo.png"
-              alt="Communicating-photo"
-              className="service-image"
-            />
-          </div>
-        </div>
-        <div className="service-content">
-          <div className="service-image-wrapper">
-            <img
-              src="/homepagePhotos/practicing-photo.png"
-              alt="Practicing-photo"
-              className="service-image"
-            />
-          </div>
-          <div className="service-description">
-            <img
-              src="/homepagePhotos/practicing-icon.svg"
-              alt="Practicing-icon"
-              className="service-icon"
-            />
-            <h3 className="service-title">Practicing</h3>
-            <p className="service-paragraph">
-              Participate in real-world projects via workshop, laying a solid
-              foundation for their future academic and professional development.
-              Apply theoretical knowledge to practical challenges, enhancing
-              problem-solving and critical-thinking skills. Collaborate with
-              peers and industry experts on innovative solutions, gaining
-              hands-on experience in AI applications. Develop technical
-              proficiency through coding exercises, data analysis, and case
-              studies, ensuring a well-rounded skill set for future academic
-              research and career advancement.
-            </p>
-          </div>
-        </div>
+        {services.map((service) => {
+          const isOddOrEven = service.id % 2 === 0 ? "even" : "odd";
+
+          const imageContent = (
+            <div className={`service-image-wrapper-${isOddOrEven}`}>
+              <img
+                src={service.photo}
+                alt={`${service.name}-photo`}
+                className="service-image"
+              />
+            </div>
+          );
+
+          const descriptionContent = (
+            <div
+              className={`service-description service-description-${isOddOrEven}`}
+            >
+              <img
+                src={service.icon}
+                alt={service.name}
+                className="service-icon"
+              />
+              <h3 className="service-title">{service.name}</h3>
+              <p className="service-paragraph">{service.paragraph}</p>
+            </div>
+          );
+
+          return (
+            <div key={service.id} className="service-content">
+              {isOddOrEven === "odd" ? (
+                <>
+                  {imageContent}
+                  {descriptionContent}
+                </>
+              ) : (
+                <>
+                  {descriptionContent}
+                  {imageContent}
+                </>
+              )}
+            </div>
+          );
+        })}
       </div>
     </section>
   );

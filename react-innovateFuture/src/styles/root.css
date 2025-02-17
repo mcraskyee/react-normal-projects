@@ -35,7 +35,6 @@
   /* line height */
   --paragraph-line-height: 1.5rem;
 
-
   /* main-part */
   /* margin */
   --body-margin: 7.5rem;
@@ -44,7 +43,7 @@
   --detail-section-margin: 2rem;
 
 
-  /* home & about page */
+  /* common variations*/
   /* main logo */
   --main-logo-width: 17rem;
   /* homepage-cooperation logo */
@@ -75,7 +74,8 @@
   --secondary-content-size: 25rem;
   --paragraph-frame-size: 55rem;
 
-  /* event page */
+
+  /* event page variations*/
   /* logo */
   --event-cooperation-logo-height: 3rem;
   /* introduction */
@@ -88,7 +88,7 @@
   --event-attend-card-padding: 2rem;
   --event-activities-card-border: 5px solid #fff;
 
-  /* contact page */
+  /* contact page variations*/
   /* label */
   --label-margin-bottom: 0.375rem;
   /* input */
@@ -101,7 +101,7 @@
   --information-padding: 2.5rem 3rem;
   --icon-margin: 1rem;
 
-  /* footer */
+  /* footer variations*/
   /* margin */
   --footer-detail-margin: 4rem;
   --footer-title-margin: 2rem;
